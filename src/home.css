@@ -1,0 +1,130 @@
+/*
+=============== 
+Home
+===============
+*/
+.home {
+  background: #d7cec7;
+  width: 100%;
+  color: #d7cec7;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+.home_text {
+  width: 100%;
+  max-height: 70vh;
+  /* max-height: 77.9vh; */
+  background: linear-gradient(rgba(3, 3, 3, 0.4), rgba(3, 3, 3, 0.6)),
+    url(./IMAGES/home.jpg) center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .title {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.caption {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+/* Larger tablets and Laptops */
+@media screen and (min-width: 792px) {
+  /* #home {
+    border: 5px solid red;
+  } */
+  .home_text {
+    height: 85vh;
+    /* height: calc(100vh - 40px); */
+  }
+  .home .title {
+    font-size: 5.5rem;
+    margin-bottom: 0;
+  }
+  .caption {
+    font-size: 1.9rem;
+  }
+  .thumbs {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.4rem;
+    padding: 0 0.4rem;
+    padding-top: 0.47rem;
+  }
+  .about_thumb,
+  .locations_thumb,
+  .brews_thumb {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(28, 27, 27, 0.4), rgba(31, 29, 29, 0.6));
+    z-index: 2;
+    font-size: 2.3rem;
+    color: #d7cec7;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .overlay p {
+    font-size: 0.73rem;
+    padding: 0 1.5rem;
+    margin-top: 2.8rem;
+  }
+}
+/* Small tablet portrait (600x800) -  to medium tablet */
+@media screen and (max-width: 791px) {
+  .home {
+    padding: 0;
+  }
+  .home_text {
+    min-height: 92vh;
+    min-height: calc(100vh - 40px);
+  }
+  .home .title {
+    font-size: 7rem;
+    margin-bottom: 0;
+  }
+  .caption {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home .title {
+    font-size: 5.85rem;
+  }
+  .caption {
+    font-size: 2.2rem;
+  }
+}
+/* from iPhone 5 - 375 X 667, to 424 */
+@media screen and (max-width: 425px) {
+  .home .title {
+    font-size: 3.875rem;
+  }
+  .caption {
+    font-size: 1.5rem;
+  }
+}
+/*from iPhone 5 - 320 X 568 , to 375*/
+@media screen and (max-width: 375px) {
+  .home .title {
+    font-size: 3rem;
+  }
+  .caption {
+    font-size: 1.1rem;
+  }
+}

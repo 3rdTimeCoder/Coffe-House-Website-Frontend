@@ -1,0 +1,88 @@
+/*
+=============== 
+Locations
+===============
+*/
+.locations {
+  width: 100%;
+}
+.locations > .section-title h1 {
+  /* recently changed from 1.5rem */
+  padding-top: 3.5rem; 
+  color: rgba(171, 104, 50, 0.98);
+}
+.locations .underline {
+  background: rgba(171, 104, 50, 0.98);
+}
+.location-card {
+  width: 350px;
+  background: rgb(235, 171, 103);
+  background: rgba(171, 104, 50, 0.5);
+  border-radius: var(--mainBorderRadius);
+  margin: 0 auto;
+  margin-top: 3rem;
+  box-shadow: var(--darkShadow);
+  padding-bottom: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+.location-card a {
+  color: rgba(171, 104, 50, 1);
+}
+.location-image {
+  width: 350px;
+  height: 300px;
+  margin: 0 auto;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
+}
+.location-card h2 {
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+}
+.location-footer {
+  border-top: 1px solid var(--dim-white);
+}
+.location-footer p {
+  color: rgba(73, 40, 26, 0.8);
+}
+@media screen and (max-width: 400px) {
+  .location-card {
+    width: 250px;
+  }
+  .location-card h2 {
+    font-size: 1.5rem;
+  }
+  .location-image {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .locations-center {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .locations {
+    padding-bottom: 4rem;
+  }
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 425px) {
+  #locations {
+    padding-bottom: 2rem;
+    padding-top: 3.1rem;
+  }
+  #locations .section-title h1 {
+    padding: 0;
+    margin: 0;
+  }
+  #locations p {
+    margin-bottom: 0.5rem;
+  }
+}

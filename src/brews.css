@@ -1,0 +1,130 @@
+/*
+=============== 
+Brews
+===============
+*/
+.brews {
+  width: 100%;
+  padding: 2rem 0.8rem;
+  padding-top: 4rem;
+  background: #d7cec7;
+  color: rgba(171, 104, 50, 1);
+}
+.brews .section-title h1 {
+  color: var(--brown);
+  color: rgba(171, 104, 50, 1);
+}
+.brews .underline {
+  background: var(--brown);
+  background: rgba(171, 104, 50, 1);
+  margin-bottom: 2rem;
+}
+.brews__center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
+}
+.brews__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+.brews__cardLeft {
+  flex: 4;
+  padding: 1.5rem;
+  margin-right: 1.5rem;
+  border: 1px solid rgba(171, 104, 50, 0.5);
+}
+.brews__cardLeft img {
+  border: 1px solid rgba(171, 104, 50, 0.5);
+}
+.brews__cardRight {
+  flex: 8;
+}
+.brews__cardRight h2 {
+  text-align: left;
+}
+.brews__cardRight p {
+  text-align: left;
+  font-size: 0.77rem;
+  width: 85%;
+  color: rgba(171, 104, 50, 0.7);
+}
+.brews__cardRight-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+.brews__cardRight-bottom p {
+  margin: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+.brews__cardBtn {
+  background: rgba(171, 104, 50, 1);
+  padding: 0.5rem 1.45rem;
+  color: #d7cec7;
+  font-family: var(--font);
+  font-weight: 200;
+  width: 100%;
+  text-transform: capitalize;
+  font-style: italic;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.brews-btn:hover {
+  border: 2px solid var(--clr-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+@media screen and (max-width: 1092px) {
+  .brews__cardLeft {
+    padding: 0.7rem;
+  }
+}
+@media screen and (max-width: 792px) {
+  .brews {
+    padding: 2.5rem 1.5rem;
+  }
+  .brews__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brews__card {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+  .brews__cardRight p {
+    text-align: right;
+    width: 97%;
+  }
+  .brews__cardLeft {
+    margin-right: 0;
+  }
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 425px) {
+  #brews {
+    padding-bottom: 1rem;
+    padding-top: 3.1rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+  #brews .section-title h1 {
+    padding: 0;
+    margin: 0;
+  }
+  #brews p {
+    margin-bottom: 0.5rem;
+  }
+  .brews__card {
+    width: 88%;
+  }
+}

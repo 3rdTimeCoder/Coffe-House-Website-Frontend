@@ -1,0 +1,105 @@
+/*
+=============== 
+Cart
+===============
+*/
+.cart {
+  width: 100%;
+  min-height: 84vh;
+  background: var(--creamy);
+}
+.cart-center {
+  padding-top: 4rem;
+  margin: 0 2rem;
+}
+.cartContainer {
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+}
+.cartItem {
+  border-bottom: 1px dashed rgba(201, 127, 67, 1);
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
+.cart .name-price h3,
+.name-price > .name {
+  font-size: 1.3rem;
+}
+.cart .name-price h3,
+.cart .name-price > .name,
+.cart .name-price > p {
+  margin: 0 !important;
+}
+.cart .name-price,
+.cart .remove-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .name-price {
+  padding: 0 1rem;
+  padding-top: 0.3rem;
+}
+.cart .remove-btn,
+.cart .clear-btn {
+  border: none;
+  background: transparent;
+}
+.cart-total {
+  padding: 0.1rem 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(201, 127, 67, 0.5);
+}
+.cart .name-price h3,
+.cart-total h3 {
+  font-weight: 200;
+}
+.cart .remove-btn,
+.cart .clear-btn,
+.cart .purchase-btn {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  background: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  color: var(--clr-white);
+  font-style: italic;
+  font-weight: 200;
+}
+.cart .purchase-btn a {
+  color: var(--clr-white);
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 425px) {
+  #cart {
+    padding-bottom: 0rem;
+    padding-top: 0;
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+  }
+  .cart-center {
+    width: 85%;
+    padding-top: 0;
+  }
+  .cartContainer {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .cart-total h3 {
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+  }
+  .cart .name-price h3,
+  .cart .name-price > .name {
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+  .cart .remove-btn,
+  .cart .clear-btn,
+  .cart .purchase-btn {
+    padding: 0.1rem 0.8rem;
+    font-size: 0.685rem;
+  }
+}

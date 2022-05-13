@@ -1,0 +1,149 @@
+body{
+  background: #d7cec7 !important;
+}
+.checkout {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--creamy);
+  background: #d7cec7;
+}
+.checkout-center {
+  padding: 0 2rem;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+}
+.checkoutItem {
+  border-bottom: 1px dashed rgba(201, 127, 67, 1);
+  padding-bottom: 0.5rem;
+  font-style: italic;
+}
+.checkout .name-price h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.checkout .name-price,
+.checkout .remove-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout .name-price {
+  padding: 0 1rem;
+  padding-top: 0.3rem;
+}
+.checkout-total {
+  padding: 0.1rem 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(201, 127, 67, 0.5);
+}
+.checkout-total h4 {
+  font-size: 1.2rem;
+}
+.checkout .name-price h3 {
+  font-weight: 200;
+}
+.checkout .remove-btn {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  background: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  color: var(--clr-white);
+  font-style: italic;
+  font-weight: 200;
+}
+.checkout__title h4 {
+  margin-bottom: 0.15rem;
+}
+.checkout__address p,
+.checkout__name p {
+  margin: 0;
+}
+.checkout__address p:nth-last-child(1),
+.checkout__name p:nth-last-child(1) {
+  margin-bottom: 1.2rem;
+}
+
+.checkout__payment-details {
+  padding: 0.75rem 0rem;
+}
+.checkout .buy-btn {
+  margin-top: 0.75rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(171, 104, 50, 1);
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: var(--clr-white);
+  width: 100%;
+}
+.checkout .buy-btn:hover {
+  background-color: rgba(171, 104, 50, 0.9);
+}
+.checkout__error-message {
+  padding: 0.75rem 0;
+  color: red;
+}
+.checkout .buy-btn:disabled,
+.checkout .buy-btn[disabled] {
+  background-color: rgb(211, 201, 201);
+  color: gray;
+  cursor: default;
+}
+@media screen and (min-width: 500px) {
+  .checkout__user-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .checkout__name {
+    text-align: left;
+  }
+  .checkout__address {
+    text-align: right;
+  }
+  .checkout__address p:nth-last-child(1),
+  .checkout__name p:nth-last-child(1) {
+    margin-bottom: 1.5rem;
+  }
+  .checkout__title h4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  .checkout footer {
+    margin-bottom: 1.3rem;
+  }
+  .checkout-center {
+    margin: 1.6rem 0;
+    padding: 0 0.5rem;
+    padding: 0 0.85rem;
+  }
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 425px) {
+  .checkout {
+    padding-bottom: 0rem;
+    padding-top: 0;
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+  }
+  .checkout-center {
+    width: 85%;
+    padding-top: 0;
+  }
+  .checkoutContainer {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .checkout .name-price h3,
+  .checkout .name-price > .name {
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+  .checkout .remove-btn {
+    padding: 0rem 0.8rem;
+    font-size: 0.685rem;
+  }
+}

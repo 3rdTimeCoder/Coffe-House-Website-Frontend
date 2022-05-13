@@ -1,0 +1,103 @@
+export const locations = [
+  {
+    id: 1,
+    location: "Johannesburg",
+    address: "123 Joburg Street, Auckland Park.",
+    image: "./locations/jhb.jpg",
+  },
+  {
+    id: 2,
+    location: "Durban",
+    address: "123 Durban Street, West Street.",
+    image: "./locations/dbn.jpg",
+  },
+  {
+    id: 3,
+    location: "Cape Town",
+    address: "123 Long Street, Waterfront.",
+    image: "./locations/cpt.jpg",
+  },
+];
+
+export const brews = [
+  {
+    id: 1,
+    image: "./brews/brew1.jpg",
+    name: "Jot",
+    price: 35.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias. Praesentium voluptates nihil molestias tempora ipsum! Quia, quas.",
+    rating: 5,
+    kg: 1,
+  },
+  {
+    id: 2,
+    image: "./brews/brew2.jpg",
+    name: "Mavezo",
+    price: 20.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias. Praesentium voluptates nihil molestias tempora quas.",
+    rating: 4,
+    kg: 2,
+  },
+  {
+    id: 3,
+    image: "./brews/brew3.jpg",
+    name: "Yellow Catuai",
+    price: 15.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias? Praesentium voluptates.",
+    rating: 4,
+    kg: 1,
+  },
+  {
+    id: 4,
+    image: "./brews/brew4.jpg",
+    name: "BUNA",
+    price: 63.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias? Praesentium voluptates nihi.",
+    rating: 4,
+    kg: 2,
+  },
+  {
+    id: 5,
+    image: "./brews/brew6.jpg",
+    name: "Ethopian Mocah",
+    price: 34.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias? Praesentium voluptates nihil molestias tempora.",
+    rating: 5,
+    kg: 2.5,
+  },
+  {
+    id: 6,
+    image: "./brews/brew7.jpg",
+    name: "James Coffe Co.",
+    price: 27.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias? Praesentium voluptates nihil molestias.",
+    rating: 5,
+    kg: 2,
+  },
+  {
+    id: 7,
+    image: "./brews/brew8.jpg",
+    name: "Jozi Java",
+    price: 15.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias? Praesentium voluptates nihil molestias tempora ipsum.",
+    rating: 4,
+    kg: 3,
+  },
+  {
+    id: 8,
+    image: "./brews/brew9.jpg",
+    name: "Coffee Mo.",
+    price: 63.0,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam dignissimos alias. Praesentium voluptates nihil molestias tempora ipsumquas.",
+    rating: 5,
+    kg: 1,
+  },
+];
+
+export const navLinks = [
+  { name: "home", url: "#top" },
+  { name: "about", url: "#about" },
+  { name: "brews", url: "#brews" },
+  { name: "Contact", url: "#contact" },
+  { name: "locations", url: "#locations" },
+];

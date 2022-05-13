@@ -1,0 +1,119 @@
+.login {
+  height: 100vh;
+  height: calc(100vh - 45px);
+  background-color: #d7cec7;
+  display: grid;
+  place-items: center;
+}
+.login__container {
+  min-width: 300px;
+  max-width: 700px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(171, 104, 50, 1);
+  padding: 30px 45px;
+  margin: 0 2rem;
+}
+.login__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(171, 104, 50, 1);
+  text-align: center;
+}
+.login__container > form > h5 {
+  margin-bottom: 5px;
+  color: var(--brown);
+  text-align: center;
+}
+.login__container > form > input {
+  font-size: 1rem;
+  height: 30px;
+  margin-bottom: 15px;
+  background-color: #d7cec7;
+  color: rgba(171, 104, 50, 1);
+  color: var(--brown);
+  width: 98%;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(171, 104, 50, 1);
+}
+.login__container > form > input:focus {
+  outline: none;
+}
+.login__container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: var(--brown);
+  text-align: center;
+}
+.login__signInButton {
+  background: rgba(171, 104, 50, 1);
+  color: var(--clr-white);
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--dim-white);
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login__registerButton {
+  background-color: rgba(171, 104, 50, 1);
+  color: var(--clr-white);
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: rgba(171, 104, 50, 1);
+  cursor: pointer;
+}
+.login__forgotPassword {
+  color: var(--clr-white) !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 425px) {
+  .login__container {
+    border: none;
+  }
+  .login__container > h1 {
+    margin-bottom: 15px;
+    font-size: 2.7rem;
+  }
+  .login__container > form > input {
+    height: 22px;
+    margin-bottom: 12px;
+  }
+  .login__container > p {
+    margin: 12px 0;
+  }
+}
+/* iPhone 5 - 320 X 568 */
+@media screen and (max-width: 376px) {
+  .login {
+    height: calc(100vh - 45px);
+  }
+  .login__container {
+    min-width: 280px;
+    padding: 15px;
+    margin: 0 1rem;
+  }
+  .login__container > h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+  .login__container > form > h5 {
+    margin-bottom: 0px;
+  }
+  .login__container > form > input {
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .login__container > p {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+}

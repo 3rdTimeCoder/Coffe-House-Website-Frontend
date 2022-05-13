@@ -1,0 +1,115 @@
+/*
+=============== 
+About
+===============
+*/
+.about {
+  background: linear-gradient(rgba(3, 3, 3, 0.4), rgba(3, 3, 3, 0.6)),
+    url(./IMAGES/about2.jpg) center/cover no-repeat fixed;
+  width: 100%;
+
+}
+.about-info {
+  border: 1px solid #d7cec7;
+  color: #d7cec7;
+  padding: 1.2rem;
+  padding-bottom: 0.7rem;
+  margin: 3rem 3rem;
+  letter-spacing: var(--spacing);
+  max-width: var(--fixed-width);
+}
+.center-about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .about > .section-title h1 {
+    padding-top: 5rem;
+  }
+  #about .underline {
+    width: 155px;
+  }
+}
+/* Small tablet portrait (600x800) -  to medium tablet */
+@media screen and (max-width: 791px) {
+  #about {
+    padding-bottom: 2rem;
+    display: grid;
+    place-items: center;
+  }
+  /* #about .section-title h1 {
+    padding: 0;
+    margin: 0;
+  } */
+  #about p {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .section-title h1 {
+    font-size: 4rem;
+  }
+  #about .section-title h1 {
+    padding-top: 3.2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  #about p {
+    font-size: 1.17rem;
+    margin-bottom: 0.85rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  #about p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  /* #about .section-title h1 {
+    padding-top: 0.85rem;
+  } */
+  .section-title h1 {
+    font-size: 3.75rem;
+    padding-bottom: 0;
+  }
+  .about-info {
+    margin-top: 1.25rem;
+  }
+}
+/* from iPhone 5 - 375 X 667, to 425 */
+@media screen and (max-width: 450px) {
+  #about p {
+    font-size: 0.78rem;
+    margin-bottom: 0.75rem;
+  }
+  .underline {
+    width: 90px;
+  }
+  .section-title h1 {
+    font-size: 3.3rem;
+    /* padding-top: 0rem; */
+  }
+}
+/* iPhone 5 - 320 X 568 */
+@media screen and (max-width: 370px) {
+  #about {
+    min-height: 93vh;
+    padding-bottom: 4.35rem;
+  }
+  #about .section-title h1 {
+    font-size: 2.5rem;
+    /* padding-top: 0; */
+  }
+  #about p {
+    font-size: 0.873rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-info {
+    margin-top: 1.25rem;
+    letter-spacing: 0.08rem;
+  }
+  .underline {
+    width: 70px;
+  }
+}
